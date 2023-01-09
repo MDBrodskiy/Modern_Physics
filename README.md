@@ -12,7 +12,7 @@
   <a href="https://github.com/MDBrodskiy/Modern_Physics">
     <img src="images/background.png" alt="background">
   </a>
-  <h3 align="center">Modern_Physics</h3>
+  <h3 align="center">Modern Physics</h3>
 <br />
 </p>
 
