@@ -20,7 +20,7 @@
 ## Table of Contents
 
 * [**Notes**](https://github.com/MDBrodskiy/Modern_Physics/tree/master/Notes/)
-    * [**Introduction to Modern Physics**](https://github.com/MDBrodskiy/Modern_Physics/tree/master/Notes/Section1.pdf)
+    * [**Week One**](https://github.com/MDBrodskiy/Modern_Physics/tree/master/Notes/Section1.pdf)
 
 <!--
   * [**Chapter 1**](#Notes/Chapter\ 1)
