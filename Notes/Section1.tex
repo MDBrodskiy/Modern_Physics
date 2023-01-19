@@ -306,6 +306,63 @@
 
     \end{itemize}
 
+    \section{Lorentz Transformation}
+
+  \item Galilean transformation is not consistent with Einstein's postulates
+
+  \item A new set of transformations that is capable of predicting the relativistic effects is necessary
+
+  \item This transformation relates the measurements of $O$ ($x,y,z,t$) to those of $O'$ ($x',y',z',t'$)
+
+  \item Some necessary properties are:
+
+    \begin{enumerate}
+
+      \item Linear equations (\nth{1} power of space and time)
+
+      \item Consistent with Einstein's postulates
+        
+      \item Reduces to Galilean transformation when $u << c$, or $\dfrac{u}{c} << 1$
+
+    \end{enumerate}
+
+  \item This new transformation is known as the Lorentz transformation. This generates the following:
+
+      $$\boxed{\left\{\begin{array}{l l} x'&=\frac{x-ut}{\sqrt{1-\frac{u^2}{c^2}}}\\ y'&=y\\z'&=z\\t'&=\frac{t-\frac{u}{c^2}x}{\sqrt{1-\frac{u^2}{c^2}}}\end{array}}$$
+
+      \item When $u<<c$, this generates the Galilean transformation:
+
+        $$\boxed{\left\{\begin{array}{l l} x'&=x-ut\\ y'&= y\\z'&= z\\t'&= t\end{array}}$$
+
+        \item Velocity Transformation
+
+          \begin{itemize}
+
+            \item If $O$ observes a particle traveling with velocity $v$ ($v_x, v_y, v_z$), what velocity, $v'$, does $O'$ observe for the particle?
+
+            \item Based on the Lorentz velocity transformation:
+
+              $$\boxed{\left\{\begin{array}{l l} v_x'&= \dfrac{v_x-u}{1-\frac{v_xu}{c^2}} \vspace{5pt}\\ v_y'&= \dfrac{v_y\sqrt{1-\frac{u^2}{c^2}}}{1-\frac{v_xu}{c^2}} \vspace{5pt}\\ v_z'&=\dfrac{v_z\sqrt{1-\frac{u^2}{c^2}}}{1-\frac{v_xu}{c^2}} \end{array}}$$
+                
+              \item A strange result here: $v_y',v_z'\neq v_y,v_z$, even if $y',z'=y,z$. This is because $t\neq t'$
+
+                $$dt'=\frac{dt-\frac{u}{c^2}dx}{\sqrt{1-\frac{u^2}{c^2}}}$$
+                $$v_y'=\frac{dy'}{dt'}=dy\frac{\sqrt{1-\frac{u^2}{c^2}}}{1-\frac{v_xu}{c^2}}=\frac{v_y\sqrt{1-\frac{u^2}{c^2}}}{1-\frac{v_xu}{c^2}}$$
+
+              \item The same method is used to find $v_z'$
+
+          \end{itemize}
+
+        \item Simultaneity and Clock Synchronization
+
+          \begin{itemize}
+
+            \item If two events happen at the same time in one inertial reference frame, do they still happen simultaneously (in another moving inertial reference frame)? No
+
+            \item If the distance $L$, between the clocks was 0, then they still happen simultaneously
+
+          \end{itemize}
+
 \end{itemize}
 
 \end{document}
