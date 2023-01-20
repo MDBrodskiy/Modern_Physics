@@ -58,13 +58,29 @@
 
           \item Horizontal distance to travel: $L$ to the right and $L$ to the left; Horizontal velocity: $c-v$ to the right, and $c+v$ to the left. Because time is distance over velocity, we obtain:
 
-            $$t_{\parallel}=\frac{L}{c-v}+\frac{L}{c+v}$$
+            $$t_{\parallel}=\frac{L}{c-v}+\frac{L}{c+v}=\frac{2Lc}{c^2-v^2}=\frac{2L}{c}\frac{1}{1-\frac{v^2}{c^2}}$$
 
-          \item Vertical distance to travel $L$ up and $L$ down; Vertical velocity: $c$, horizontal velocity
+          \item Vertical distance to travel $L$ up and $L$ down; Velocity vector: $c$, horizontal velocity $u\longrightarrow$ vertical velocity : $\sqrt{c^2-v^2}$
+
+            $$t_{\perp}=\frac{2L}{\sqrt{c^2-v^2}}=\frac{2L}{c}\frac{1}{\sqrt{1-\frac{v^2}{c^2}}}$$
+
+            $$\boxed{\Delta t=\frac{2L}{c}\left( \frac{1}{1-\frac{v^2}{c^2}} - \frac{1}{\sqrt{1-\frac{v^2}{c^2}}} \right)}$$
 
         \end{itemize}
 
       \item
+
+            $$f=\frac{v}{\lambda}; f=\frac{N}{\Delta t}; N=\frac{v}{\lambda}\Delta t$$
+            $$\Delta t=\frac{4L}{c}\left( \frac{1}{1-\frac{v^2}{c^2}} - \frac{1}{\sqrt{1-\frac{v^2}{c^2}}} \right)$$
+            $$\Delta t = \frac{4 (11)}{30000}\left( \frac{1}{1-\frac{(30000)^2}{(3\cdot10^8)^2}}-\frac{1}{\sqrt{1-\frac{(30000)^2}{(3\cdot10^8)^2}}} \right)$$
+            $$=7.333[\si{\pico\second}]$$
+            $$(7.333\cdot10^{-12}) \cdot \frac{30000}{500\cdot10^{-9}}=(7.333)\frac{30}{500} = .44$$
+
+            \begin{itemize}
+
+              \item $\boxed{\text{There was a fringe shift of .44}}$
+
+            \end{itemize}
 
     \end{enumerate}
 
