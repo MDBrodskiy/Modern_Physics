@@ -477,6 +477,69 @@
 
   \item Applies to the energies and momentums of objects
 
+    \newpage
+
+    \begin{figure}[h!]
+      \centering
+      \input{Figures/momentum}
+      \caption{Momentum Collision}
+      \label{fig:6}
+    \end{figure}
+
+  \item Assuming the $2m$ mass is initially at rest, and $m$ is moving at $-.75c$, how would the final result be derived?
+
+  \item Using conservation of momentum, there should be $-.75mc$ total momentum at the end; however, a Lorentz transformation must be used when working with relativistic dynamics
+    
+  \item So is momentum conserved in relativistic dynamics?
+
+    \begin{itemize}
+
+      \item No, $p_i \neq p_f$
+
+    \end{itemize}
+
+  \item Thus, it was necessary to modify the mass in relativistic dynamics so that conservation of momentum holds true
+
+    \begin{itemize}
+
+      \item The new mass had to be a function of the velocity
+
+      \item The following function was hypothesized, with $v$ as the speed of an object in an inertial reference frame:
+
+        $$\boxed{m(v)=\frac{m}{\sqrt{1-\dfrac{v^2}{c^2}}}}$$
+
+      \item At $v=0$, the mass would be as normal, also known as the rest mass
+
+      \item But, as $v$ approaches $c$, the mass approaches infinity!
+
+      \item This would mean relativistic momentum is defined as:
+
+        $$\overline{p}=m(v)\overline{v}\Rightarrow \frac{1}{\sqrt{1-\dfrac{v^2}{c^2}}}m\overline{v}$$
+
+      \item The relativistic momentum conservation formula can then be applied to relativistic kinetic energy conservation
+
+    \end{itemize}
+
+  \item Kinetic Energy in Relativity Theory
+
+    \begin{itemize}
+
+      \item In classical physics, the work-energy theorem is:
+
+        $$K=W=\int_0^x F\,dx\Rightarrow F=\frac{d\overline{p}}{dt}\Rightarrow \int_0^{\overline{p}} \frac{dx}{dt}\,dp$$
+
+      \item $\dfrac{dx}{dt}=v$, so we have velocity involved
+
+      \item Substituting and using integration by parts, we get:
+
+        $$\int_0^v v\,dp=pv-\int p\,dv$$
+
+      \item This means that the kinetic energy may be defined as:
+
+        $$K=pv-\int_0^p p\,dv$$
+
+    \end{itemize}
+
 \end{itemize}
 
 \end{document}
