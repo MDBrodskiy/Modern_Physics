@@ -1,0 +1,129 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: Modern Physics
+% Professor: Q. Yan
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\include{Includes.tex}
+
+\title{Homework 2}
+\date{January 29, 2023}
+\author{Michael Brodskiy\\ \small Professor: Q. Yan}
+
+\begin{document}
+
+\maketitle
+
+\newpage
+
+\begin{enumerate}
+
+    \section{Twins}
+
+  \item
+
+    \begin{enumerate}
+
+      \item 
+
+        \begin{itemize}
+
+          \item Total distance for Mary-Kate: $ 2L_0 = 32[\text{light-years}]$
+            
+          \item Total time for Mary-Kate: $\Delta t_0 = 20[\text{yr}]$
+
+
+            $$v\Delta t_0 = 2L$$
+            $$v\Delta t_0=2L_0\sqrt{1-\dfrac{v^2}{c^2}}$$
+            $$v=\frac{2L_0\sqrt{1-\dfrac{v^2}{c^2}}}{\Delta t_0}$$
+            $$v^2=\frac{(32)^2c^2\left(1-\dfrac{v^2}{c^2}\right)}{20^2}$$
+            $$v^2=2.56c^2-2.56v^2$$
+            $$3.56v^2=2.56c^2$$
+            $$\boxed{v=.848c}$$
+
+        \end{itemize}
+
+      \item According to the result from (a), the speed at which Mary-Kate traveled is $.848c$. Applying the time dilation formula using this knowledge yields:
+
+        $$\Delta t = \frac{20}{\sqrt{1-(.848)^2}}$$
+        $$\Delta t = 37.7[\text{yr}]$$
+
+        So Ashley is $37.7-20=17.7$ years older than Mary-Kate when Mary-Kate returns
+
+    \end{enumerate}
+
+    \section{Spherical Waves}
+
+  \item The Lorentz Transformation is given as:
+
+      $$\left\{\begin{array}{l}x'=\dfrac{x-ut}{\sqrt{1-\frac{u^2}{c^2}}}\\y'=y\\z'=z\\t'=\dfrac{t-\frac{u}{c^2}x}{\sqrt{1-\frac{u^2}{c^2}}}\\ \end{array}$$
+
+        Because it is stated that the pulse begins at time $t=0$, it can be assumed that, at this time, the pulse is not moving. As such, the transformations reduce to:
+
+        $$\left\{\begin{array}{l}x'=\dfrac{x-(0)t}{\sqrt{1-\frac{0^2}{c^2}}}=x\\y'=y\\z'=z\\t'=\dfrac{t-\frac{0}{c^2}x}{\sqrt{1-\frac{0^2}{c^2}}}=t\\ \end{array}$$
+
+          In this manner, we substitute each transformation into the original formula, which yields:
+
+          $$\boxed{x'^2+y'^2+z'^2=(ct')^2=0}$$
+
+    \section{Pole Vaulting}
+
+  \item
+
+    \begin{enumerate}
+
+      \item Using the length contraction formula, the proper length ($L_0$) as $20[\si{\meter}]$, and the observed length $(L)$ as $10[\si{\meter}]$, we obtain:
+
+        $$10 = 20\sqrt{1-\dfrac{u^2}{c^2}}$$
+        $$.25=1-\dfrac{u^2}{c^2}$$
+        $$.25c^2=c^2-u^2$$
+        $$u^2=.75c^2$$
+        $$\boxed{u=.866c}$$
+
+        As Ming's speed in reference frame of observer $O$
+
+      \item To prevent from getting stuck inside of or damaging the garage, Ming must be running at a speed of at least $.866c$. In doing so, due to the idea of length contraction, for that split moment in which the garage doors are closed, Ming actually fits inside, despite having a pole that, in proper length, is longer than the garage. From the perspective of Ming, the calculation to find the necessary speed would be similar to that of the rest frame of the garage, where $L_0=10[\si{\meter}]$ is the proper length of the garage, and $L=5[\si{\meter}]$ is the length of the garage as experienced by Ming:
+
+        $$5=10\sqrt{1-\dfrac{u^2}{c^2}}$$
+        $$.25=1-\dfrac{u^2}{c^2}$$
+        $$u=.866c$$
+
+        Thus, Ming must maintain at least a speed of $.866c$ to contract to a length small enough to fit inside of the garage.
+
+    \end{enumerate}
+
+    \section{Meson Decay}
+
+  \item $\pi$ Meson speed: $v_x=\pm.815c$; $K$ Meson speed: $u=.453c$
+
+    This would mean, using the Lorentz velocity transformation, the first $\pi$ meson particle would have a speed of:
+
+    $$v_{x1}'=\frac{.815-.453}{1-(.815)(.453)}c$$
+    $$\boxed{v_{x1}'=.574c}$$
+
+    And the other, using $v_x=-.815c$, would have a speed of:
+
+    $$v_{x2}'=\frac{-.815-.453}{1+(.815)(.453)}c$$
+    $$\boxed{v_{x2}'=-.926c}$$
+
+    \section{Meter Stick}
+
+  \item Because the motion is parallel, only the $x$ component of the meter stick experiences length contraction. Thus, to find the components, we would perform the following:
+
+    $$L_y=(1[\si{\meter}])\sin(30)=.5[\si{\meter}]$$
+    $$L_x=(1[\si{\meter}])\cos(30)=.866[\si{\meter}]$$
+
+      Following contraction, $L_x$ becomes:
+
+      $$L_x'=.866(\sqrt{1-.81})=.378[\si{\meter}]$$
+
+      Thus, the new length of the meter stick becomes:
+
+      $$L=\sqrt{(.378)^2+(.5)^2}$$
+      $$\boxed{L=.627[\si{\meter}]}$$
+
+
+\end{enumerate}
+
+\end{document}
+
