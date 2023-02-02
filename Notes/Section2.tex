@@ -1,0 +1,126 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: Modern Physics
+% Professor: Q. Yan
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\include{Includes.tex}
+
+\title{The Particle-Like Properties of Electromagnetic Waves}
+\date{\today}
+\author{Michael Brodskiy\\ \small Professor: Q. Yan}
+
+\begin{document}
+
+\maketitle
+
+\newpage
+
+\tableofcontents
+
+\newpage
+
+\begin{itemize}
+
+    \section{Review of Electromagnetic Waves}
+
+  \item Reviewing the nature of light (or electromagnetic waves)
+
+    \begin{itemize}
+
+      \item A plane wave
+
+        \begin{itemize}
+
+          \item A plane wave traveling in the positive x direction:
+
+            $$\left\{\begin{array}{c} \vec{E}=\vec{E}_o\sin(kx-\omega t)\\\vec{B}=\vec{B}_o\sin(kx-\omega t) \end{array}$$
+
+            \item The direction of energy transport would be $\vec{E}\times\vec{B}$
+
+            \item $|\vec{E}|$ and $|\vec{B}|$ are constant at a given $t$
+
+            \item The power, $P$, of the wave:
+
+              $$P=\frac{E}{\Delta t}=\frac{1}{\mu_oc}E_o^2A\sin^2(kx-\omega t)$$
+
+            \item Two important features:
+
+              \begin{enumerate}
+
+                \item Intensity (average power per unit area) is proportional to $E_o^2$
+
+                  $$P_{avg}=\int_0^T P(t)\,dt$$
+
+                \item  The intensity of the system fluctuates with time
+
+                  $$\frac{P_{avg}}{A}$$
+
+              \end{enumerate}
+
+        \end{itemize}
+
+      \item A spherical wave
+
+        \begin{itemize}
+
+          \item Spreads out uniformly along the three axis
+
+        \end{itemize}
+
+    \end{itemize}
+
+    \section{The Photoelectric Effect}
+
+  \item Experiment performed by Heinrich Hertz (1887)
+
+  \item When a metal surface is illuminated, light electrons can be emitted from the surface
+
+  \item The Experiment:
+
+    \begin{itemize}
+
+      \item Connect emitter and collector to an external circuit
+
+      \item Apply a negative potential to the circuit collector
+
+      \item Increase the potential difference ($(-V)-(+V)$) to be more negative
+
+      \item At some point, even the most energetic electrons do not have enough kinetic energy to reach the collector
+
+      \item The maximum kinetic energy to reach the collector with the stopping voltage, $V_s$, is:
+
+        $$K_{max}=eV_s$$
+
+    \end{itemize}
+
+    \begin{figure}[h!]
+      \centering
+      \include{Figures/PhotoElecEffec}
+      \caption{Set up of the Photoelectric Effect Experiment}
+      \label{fig:1}
+    \end{figure}
+
+    \begin{itemize}
+
+      \item The classical picture: The energy of light with intensity $I$ is absorbed by electrons, $E_{light} > E_{binding}$, $e$ is released
+
+
+      \item What does the classical wave theory predict?
+
+        \begin{enumerate}
+
+          \item $K_{max}$ is proportional to $E_o^2\rightarrow\boxed{I}$
+
+          \item The effect occurs for light with any frequency or wavelength
+
+          \item $e^-$ are released
+
+        \end{enumerate}
+
+    \end{itemize}
+
+\end{itemize}
+
+\end{document}
+
