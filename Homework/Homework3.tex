@@ -1,0 +1,117 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: Modern Physics
+% Professor: Q. Yan
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\include{Includes.tex}
+
+\title{Homework 3}
+\date{February 7, 2023}
+\author{Michael Brodskiy\\ \small Professor: Q. Yan}
+
+\begin{document}
+
+\maketitle
+
+\newpage
+
+\begin{enumerate}
+
+    \section*{Relativistic Work-Energy Thereom}
+
+  \item
+
+    $$\Delta K = W=\int_0^x F\,dx\Rightarrow F=\frac{d\vec{p}}{dt}$$
+    $$\Delta K=\int_0^{\vec{p}} \frac{dx}{dt}\,d\vec{p}$$
+    $$\int_0^{\vec{p}}v\,d\vec{p}\rightarrow\left\{\begin{array}{c c}u=v & v=\vec{p}\\ du=1 & dv=d\vec{p} \end{array}$$
+      $$\Delta K = \vec{p}v-\int_0^v p\,dv=\dfrac{mv^2}{\sqrt{1-\frac{v^2}{c^2}}}-\int_0^v\dfrac{mv}{\sqrt{1-\frac{v^2}{c^2}}}\,dv$$
+      $$=\dfrac{mv^2}{\sqrt{1-\frac{v^2}{c^2}}}+mc^2\sqrt{1-\frac{v^2}{c^2}}-mc^2=\boxed{\left(\frac{mc^2}{\sqrt{1-\frac{v^2}{c^2}}}-mc^2\right)}$$
+
+    \section*{Electron and Positron}
+
+  \item
+
+    $$2K_{m^-}= 2K_{\mu}$$
+    $$K_{\mu}=K_{m^-}$$
+    $$m_-=m_+=.511\left[ \frac{\si{\mega\eV}}{c^2} \right]$$
+    $$E_{\mu}=(.511)\left( \sqrt{1-(.99999)^2}\right)^{-1}=114.26[\si{\mega\eV}]$$
+    $$\boxed{K=E_{\mu}-m_{\mu}c^2=114.26-105.7=8.56[\si{\mega\eV}]}$$
+
+    \section*{Light Color}
+
+  \item Using the Lorentz Transformation:
+
+    $$x_1=x_1'=t_1=t_1'=0$$
+
+    Because the origins of the frames are lined up at $t=0$. For the blue flash, however, the numbers change in a new reference frame:
+
+    $$x_2'=\dfrac{x_2-ut}{\sqrt{1-\frac{u^2}{c^2}}}$$
+    $$t_2'=\dfrac{t_2-\frac{u}{c^2}x_2}{\sqrt{1-\frac{u^2}{c^2}}}$$
+    $$\boxed{x_2'=\dfrac{3.65-(.534c)(8.24\cdot10^{-9})}{\sqrt{1-(.534)^2}}=2.76[\si{\kilo\meter}]}$$
+    $$\boxed{t_2'=\dfrac{(8.24\cdot10^{-6})-\frac{.534}{c}(3.65)}{\sqrt{1-(.534)^2}}=2.06[\si{\micro\second}]}$$
+
+
+    \section*{Relativistic Energy and Momentum}
+
+  \item The new frame of reference would generate $v'=\dfrac{v-u}{1-\frac{vu}{c^2}}$
+
+    \begin{enumerate}
+
+      \item Thus, the energy become:
+
+        $$E'=\dfrac{mc^2}{1-\frac{v'^2}{c^2}}=\boxed{\dfrac{mc^2}{\sqrt{1-\dfrac{\left(v-u/(1-\frac{vu}{c^2})\right)^2}{c^2}}}}$$
+
+        And the momentum becomes:
+
+        $$\vec{p}\prime=\dfrac{mv'}{\sqrt{1-\frac{v^2}{c^2}}}=\boxed{\dfrac{m\left(v-u/(1-\frac{vu}{c^2})\right)}{\sqrt{1-\dfrac{\left(v-u/(1-\frac{vu}{c^2})\right)^2}{c^2}}}}$$
+
+      \item Using the above values, we obtain:
+
+        $$\left(\dfrac{mc^2}{\sqrt{1-\dfrac{\left(v-u/(1-\frac{vu}{c^2})\right)^2}{c^2}}}\right)^2-\left(\dfrac{mc\left(v-u/(1-\frac{vu}{c^2})\right)}{\sqrt{1-\dfrac{\left(v-u/(1-\frac{vu}{c^2})\right)^2}{c^2}}}\right)^2=$$
+        $$\left(\dfrac{m^2c^4-m^2c^2(v-u/(1-\frac{vu}{c^2}))^2}{1-\dfrac{\left(v-u/(1-\frac{vu}{c^2})\right)^2}{c^2}}\right)\Rightarrow\left(\dfrac{m^2c^4\cancel{\left(c^2-(v-u/(1-\frac{vu}{c^2}))^2\right)}}{\cancel{c^2-\left(v-u/(1-\frac{vu}{c^2})\right)^2}}\right) $$
+        $$\boxed{m^2c^4}$$
+
+        This means that, in every possible frame of reference, $E^2-(pc)^2=(mc^2)^2$. Thus, any observer, no matter their reference frame, would measure the same rest energy and rest mass.
+
+    \end{enumerate}
+
+    \section*{Electron and Positron, part 2}
+
+  \item
+
+    \begin{enumerate}
+
+      \item  
+
+        $$\vec{p}=\frac{m_ev_1}{\sqrt{1-\frac{v_1^2}{c^2}}}+\frac{m_ev_2}{\sqrt{1-\frac{v_2^2}{c^2}}}$$
+        $$\vec{p}=\frac{(.834\cdot.511)}{\sqrt{1-(.834)^2}}+\frac{(-.428\cdot.511)}{\sqrt{1-(.428)^2}}=$$
+        $$\boxed{.53\left[ \frac{\si{\mega\eV}}{c} \right]}$$
+
+        $$E=\left(\frac{m_ec^2}{\sqrt{1-\frac{v_1^2}{c^2}}}-m_ec^2\right)+\left(\frac{m_ec^2}{\sqrt{1-\frac{v_2^2}{c^2}}}-m_ec^2\right) \right)$$
+        $$\left(\frac{.511}{\sqrt{1-(.834)^2}} + \frac{.511}{\sqrt{1-(.428)^2}}\right)=$$
+        $$\boxed{1.49[\si{\mega\eV}]}$$
+
+      \item 
+
+        $$m_{new}=\dfrac{\sqrt{E^2-(pc)^2}}{c^2}$$
+        $$m_{new}=\sqrt{(1.49)^2-(.53)^2}=$$
+        $$\boxed{1.39\left[ \frac{\si{\mega\eV}}{c^2} \right]}$$
+
+      \item 
+
+        $$K_0=\left(\frac{.511}{\sqrt{1-(.834)^2}} + \frac{.511}{\sqrt{1-(.428)^2}}-2(.511)\right)$$
+        $$=.469[\si{\mega\eV}]$$
+        $$K_f=1.49-1.39=.1[\si{\mega\eV}]$$
+        $$\Delta K=.1 - .469= -.369[\si{\mega\eV}]$$
+
+        The change in kinetic energy is related to the rest mass of the new particle. Because the velocity is unknown, while the energy of the particle is known, the formula $K=E - E_0$ should be used. As such, the rest mass is subtracted from the total energy, meaning the final particle is bigger (which makes sense because the two particles combine) and slower moving than the other two. This yields a change in kinetic energy of $-.369[\si{\mega\eV}]$, most likely a result of some kind of heat or light emission from the collision.
+
+      \item As stated in problem 4, the rest energy, rest mass, and, therefore, overall energy, would be the same regardless of which frame of reference an observer is in; what would change, however, would be the momentum of the particles with respect to the observer.
+
+    \end{enumerate}
+
+\end{enumerate}
+
+\end{document}
+
