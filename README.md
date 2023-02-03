@@ -25,6 +25,7 @@
 * [**Homework**](https://github.com/MDBrodskiy/Modern_Physics/tree/master/Homework/)
     * [**Homework One**](https://github.com/MDBrodskiy/Modern_Physics/tree/master/Homework/Homework1.pdf)
     * [**Homework Two**](https://github.com/MDBrodskiy/Modern_Physics/tree/master/Homework/Homework2.pdf)
+    * [**Homework Three**](https://github.com/MDBrodskiy/Modern_Physics/tree/master/Homework/Homework3.pdf)
 
 <!--
   * [**Chapter 1**](#Notes/Chapter\ 1)
