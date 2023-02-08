@@ -138,6 +138,8 @@
 
     \end{itemize}
 
+    \section{Thermal Radiation}
+
   \item The Quantum Theory of the Photoelectric Effect
 
     \begin{itemize}
@@ -181,6 +183,70 @@
       \item Determined Planck's constant ($h=6.57\cdot10^{-34}\si{\joule\second}$)
 
       \item Fairly accurate, modern calculations found $h=6.626\cdot10^{-34} \si{\joule\second}$
+
+    \end{itemize}
+
+  \item The Photoelectric Effect Formula:
+
+    $$\boxed{\lambda_c=\frac{hc}{\phi}}$$
+
+    \begin{itemize}
+
+      \item Where $\lambda_c$ is the cutoff wavelength, $h$ is Planck's constant, and $\phi$ is the work function
+
+    \end{itemize}
+
+    \section{Compton Effect}
+
+  \item From classical physics (optics), $\lambda_1=\lambda_2$
+
+    \begin{figure}[h!]
+      \centering
+      \include{Figures/snell}
+      \caption{Classical Reflection of a Light Beam}
+      \label{fig:2}
+    \end{figure}
+
+  \item There will be a scattering process (Figure \ref{fig:3})
+
+    \begin{itemize}
+
+      \item An incident photon ($E,p$) collides with a stationary electron
+
+      \item The photon ($E',p'$) is scattered with angle $\theta$
+
+      \item The electron ($E_e,p_e$) is scattered with angle $\phi$
+
+    \end{itemize}
+
+    \begin{figure}[h!]
+      \centering
+      \include{Figures/collision}
+      \caption{Collision of Photon and Electron}
+      \label{fig:3}
+    \end{figure}
+
+  \item Conservation of Energy and Momentum
+
+    \begin{itemize}
+
+      \item $E_i=E_f\Rightarrow E+m_ec^2=E'+E_e$
+
+      \item Momentum
+
+        \begin{itemize}
+
+          \item $p_{xi}=p_{xf}\Rightarrow p=p'\cos(\theta)+p_e\cos(\phi)$
+
+          \item $p_{yi}=p_{yf}\Rightarrow 0=p'\sin(\theta)+p_e\sin(\phi)$
+
+        \end{itemize}
+
+      \item After a lot of algebra and formula manipulations, we get:
+
+        $$\boxed{\lambda'-\lambda=\frac{h}{m_ec}\left( 1-\cos(\theta) \right)}$$
+
+      \item $\lambda'$ is the wavelength of the scattered photon, $\lambda$ is the wavelength of the incident photon, and $\dfrac{h}{m_ec}$ is the Compton wavelength (approximately $.002426[\si{\nano\meter}]$)
 
     \end{itemize}
 
