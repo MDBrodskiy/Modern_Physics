@@ -318,7 +318,72 @@
 
       \item What was needed? $u(\lambda)\to 0$ when $\lambda \to 0$
 
-      \item An oscillating can absorb or emit energy only in discrete bundles
+      \item An oscillating atom can absorb or emit energy only in discrete bundles
+
+        \begin{figure}[h!]
+          \centering
+          \include{Figures/EnergyLevels}
+          \caption{Oscillator with Multiple Energy Levels}
+          \label{fig:4}
+        \end{figure}
+
+      \item Energy level movement can occur only in integer multiples of $N$
+
+      \item This becomes:
+
+        $$\boxed{E_n=n\varepsilon}$$
+
+      \item Where $E_n$ is discrete, and $n$ represents the \# of quanta ($n=1,2,3,\cdots$)
+
+      \item The difference is $E$ is not a continuous variable anymore
+
+      \item Classically, $E_{avg}=k_BT$
+
+      \item The quantum version of $E_n$ for $N$ oscillators is: 
+
+        $$\boxed{N_n=N\left(1-e^{-\dfrac{\varepsilon}{k_BT}}\right)e^{-\dfrac{n\varepsilon}{k_BT}}}$$
+
+      \item Summing all values of $N_n$ would yield:
+
+        $$\sum_{n=0}^{\infty}N_n=N$$
+
+      \item This means $E_{avg}$ becomes:
+
+        $$\boxed{E_{avg}=\dfrac{\left(\displaystyle \sum_{n=0}^{\infty}N_nE_n\right)}{\left(\displaystyle \sum_{n=0}^{\infty} N_n \right)}}$$
+
+      \item The numerator is the total energy for all oscillators
+
+      \item The equation can be simplified to:
+
+        $$\boxed{E_{avg}=\dfrac{\varepsilon}{e^{\left(\dfrac{\varepsilon}{k_BT}\right)}-1}}$$
+
+        \begin{center}
+          or
+        \end{center}
+
+        \vspace{-12pt}
+
+        $$\boxed{E_{avg}=\dfrac{\frac{hc}{\lambda}}{e^{\left(\dfrac{hc}{\lambda k_BT}\right)}-1}}$$
+
+      \item Using the quantum formula from above, the formula for intensity becomes:
+
+        $$\boxed{I(\lambda)=\dfrac{2\pi hc^2}{\lambda^5}\dfrac{1}{e^{\left(\dfrac{hc}{\lambda k_BT}\right)}-1}}$$
+
+      \item A relation between the Stefan-Boltzmann constant and the Planck constant
+
+        $$\boxed{\sigma=\dfrac{2\pi^5k_B^4}{15c^2h^3}}$$
+
+    \end{itemize}
+
+  \item Summary
+
+    \begin{itemize}
+
+      \item Photoelectric Effect: Absorption of electromagnetic radiation
+
+      \item Thermal Radiation: Emission of electromagnetic waves
+
+      \item Both concluded that we have to use quanta to understand light and radiation
 
     \end{itemize}
 
