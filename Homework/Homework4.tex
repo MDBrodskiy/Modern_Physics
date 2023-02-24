@@ -1,0 +1,149 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: Modern Physics
+% Professor: Q. Yan
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\include{Includes.tex}
+
+\usepackage[dvipsnames,table]{xcolor}
+\usepackage{siunitx} % SI-units
+\usepackage{pgfplots}
+\usepgfplotslibrary{units} % to add units easily to axis
+\usepgfplotslibrary{fillbetween} % to fill inbetween curves
+\usepgfplotslibrary{colormaps} % to create colormaps
+
+\title{Homework 4}
+\date{February 23, 2023}
+\author{Michael Brodskiy\\ \small Professor: Q. Yan}
+
+\begin{document}
+
+\maketitle
+
+\newpage
+
+\begin{enumerate}
+
+    \section*{Light Bulb and Photons}
+
+    \begin{enumerate}
+
+      \item The energy of the photons may be calculated using $E=hf$
+
+        $$E=\dfrac{hc}{\lambda}=\dfrac{\left(6.626\cdot10^{-34}\right)\left(3\cdot10^8\right)}{550\cdot10^{-9}}=3.614\cdot10^{-19}[\si{\joule}]$$
+        \begin{itemize}
+
+          \item The total amount of energy in 55 watts can be found as:
+
+            $$\dfrac{55}{E}=15.27\cdot10^{19}[\text{photons per second}]$$
+
+          \item With 75\% efficiency, this becomes
+
+            $$.75\cdot15.27\cdot10^{19}=11.45\cdot10^{19}[\text{photons per second}]$$
+
+          \item Converting to hours, we finally get:
+
+            $$11.45\cdot10^{19}\cdot3600=4.122\cdot10^{23}[\text{photons per hour}]$$
+
+        \end{itemize}
+
+      \item
+
+        \begin{itemize}
+
+          \item The area of the plate is:
+
+            $$(.01)^2=.0001[\si{\meter\squared}]$$
+
+          \item The area of the emitted light within the radius of the plate is:
+
+            $$4\pi r^2=4\pi(1)^2=12.566[\si{\meter\squared}]$$
+
+          \item Using area proportions and the number calculated in (a), we get:
+
+            $$\left(11.45\cdot10^{19}\right)\dfrac{.0001}{12.566}=9.11\cdot10^{14}[\text{photons}]$$
+
+        \end{itemize}
+
+    \end{enumerate}
+
+    \section*{Compton Scattering}
+
+    \begin{itemize}
+
+      \item The formula for energy difference of a scattered electron is:
+
+        $$\dfrac{1}{E'}-\dfrac{1}{E}=\dfrac{1}{m_ec^2}(1-\cos(\theta))$$
+
+      \item The maximum kinetic energy given to the electron occurs when the subsequent energy of the photon is minimal, or when $\theta = 180$. Thus, we obtain:
+
+        $$\dfrac{1}{E'}=\dfrac{2}{m_ec^2}+\dfrac{1}{E}$$
+        $$E'=\left(\dfrac{2}{m_ec^2}+\dfrac{1}{E}\right)^{-1}$$
+
+    \end{itemize}
+
+    \section*{Thermal Radiation}
+
+    \begin{enumerate}
+
+      \item 
+
+        \begin{itemize}
+
+          \item Using Wien's displacement:
+
+            $$\lambda_{max}=\dfrac{2.9\cdot10^{-3}}{T}$$
+            $$\lambda_{max}=\dfrac{2.9\cdot10^{-3}}{273+34}$$
+            $$\lambda_{max}=9.45[\si{\micro\meter}]$$
+
+          \item Per the EM spectrum below, this is in the infrared range
+
+            \begin{figure}[h!]
+              \centering
+              \include{Figures/EMSpec}
+              \caption{Electromagnetic Spectrum}
+              \label{fig:1}
+            \end{figure}
+
+        \end{itemize}
+
+      \item
+
+        \begin{itemize}
+
+          \item Assuming a human body to be roughly $2[\si{\meter\squared}]$ in surface area, Stefan's law may be used:
+
+            $$P=\sigma AT^4$$
+            $$\left( 5.67\cdot10^{-8} \right)(2)(273+34)^4=1007.3[\si{\watt}]$$
+
+        \end{itemize}
+
+    \end{enumerate}
+
+    \section*{Photoelectric Effect}
+
+    \begin{itemize}
+
+      \item The formula relation for voltage and work function is:
+
+        $$e^-V=hf-\phi$$
+
+      \item With copper, this means:
+
+        $$V=\dfrac{\dfrac{hc}{\lambda}-\phi_1}{e^-}$$
+
+      \item With sodium, $V$ would be:
+
+        $$V_s=\dfrac{\dfrac{hc}{\lambda}-\phi_2}{e^-}$$
+
+      \item This means:
+
+        $$V_s=V - \dfrac{\phi_2-\phi_1}{e^-}$$
+
+    \end{itemize}
+
+\end{enumerate}
+
+\end{document}
+
