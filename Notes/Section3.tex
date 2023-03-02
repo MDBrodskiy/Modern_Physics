@@ -248,7 +248,70 @@
 
       \item It is a second order differential equation
 
+      \item Using a free particle, with $A$ as the amplitude, to derive the equation (at a given time $t=t_o$), $\psi(x)$ is:
+
+        $$\boxed{\psi(x)=A\sin(kx),\,\,\,\,\,\,\,\,\,\,k=\frac{2\pi}{\lambda}}$$
+
+        $$\boxed{\frac{d\psi(x)}{dx}=Ak\cos(kx)}$$
+
+        $$\boxed{\frac{d^2\psi(x)}{dx}=-Ak^2\sin(kx)=-k^2\psi(x)}$$
+
+      \item Using the kinetic energy, $K=\dfrac{p^2}{2m}=\left( \dfrac{\hbar}{\lambda} \right)^2\dfrac{1}{2m}$
+
+        $$K=\frac{\hbar^2k^2}{2m}$$
+
+      \item Thus, we obtain:
+
+        $$\boxed{-\frac{\hbar^2}{2m}\frac{d^2\psi(x)}{dx^2}=K\psi(x)}$$
+
+      \item Using total energy:
+
+        $$\boxed{-\frac{\hbar^2}{2m}\frac{d^2\psi(x)}{dx^2}+U(x)\psi(x)=E\psi(x)}$$
+
+      \item This is the unidimensional, static\footnote{time independent} Schr\"odinger equation
+
     \end{itemize}
+
+  \item Probability density and normalization
+
+    \begin{itemize}
+
+      \item We defined $P(x)\,dx=|\psi(x)|^2\,dx$
+
+      \item $P(x)\,dx$ represents the probability density
+
+
+        $$\int_{x_1}^{x_2} P(x)\,dx\Rightarrow P(x_1:x_2)$$
+
+      \item Is the probability of finding the particle in range $x_1$ to $x_2$
+
+        $$\int_{-\infty}^{\infty}P(x)\,dx=1\,\,\forall\text{ particles}$$
+
+      \item This means:
+
+        $$\boxed{\int_{-\infty}^{\infty} |\psi(x)|^2\,dx = 1}$$
+
+      \item The average location of the particle is given by:
+
+        $$\boxed{\dfrac{\sum n_1x_1+n_2x_2+\cdots+n_ix_i}{\sum n_1+n_2+\cdots+n_i}}$$
+
+      \item On a much smaller interval, we can use:
+
+        $$x_{avg}=\dfrac{\displaystyle \int_{-\infty}^{\infty} xP(x)\,dx}{\displaystyle \int_{-\infty}^{\infty} P(x)\,dx}=\int_{-\infty}^{\infty} x|\psi(x)|^2\,dx$$
+
+      \item For any function of $x$, the average is:
+
+        $$[f(x)]_{avg}=\int_{-\infty}^{\infty}f(x)|\psi(x)|^2\,dx$$
+
+    \end{itemize}
+
+  \item Given a case of constant potential energy:
+
+    $$\psi(x)=A\sin(kx)+B\cos(kx)$$
+
+  \item Given a case where $E < U_o$\footnote{$e^{kx}$ has to be removed because it diverges}
+
+    $$\psi(x)=Ae^{-kx}$$
 
 \end{itemize}
 
