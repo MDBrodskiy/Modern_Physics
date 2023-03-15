@@ -23,6 +23,7 @@
     * [**The Special Theory of Relativity**](https://github.com/MDBrodskiy/Modern_Physics/tree/master/Notes/Section1.pdf)
     * [**The Particle-Like Properties of Electromagnetic Radiation**](https://github.com/MDBrodskiy/Modern_Physics/tree/master/Notes/Section2.pdf)
     * [**The Wave-Like Properties of Particles**](https://github.com/MDBrodskiy/Modern_Physics/tree/master/Notes/Section3.pdf)
+    * [**The Schrodinger Equation**](https://github.com/MDBrodskiy/Modern_Physics/tree/master/Notes/Section3.pdf)
 * [**Homework**](https://github.com/MDBrodskiy/Modern_Physics/tree/master/Homework/)
     * [**Homework One**](https://github.com/MDBrodskiy/Modern_Physics/tree/master/Homework/Homework1.pdf)
     * [**Homework Two**](https://github.com/MDBrodskiy/Modern_Physics/tree/master/Homework/Homework2.pdf)
