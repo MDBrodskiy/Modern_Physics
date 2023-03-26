@@ -1,0 +1,100 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: Modern Physics
+% Professor: Q. Yan
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\include{Includes.tex}
+
+\usepackage[dvipsnames,table]{xcolor}
+\usepackage{siunitx} % SI-units
+\usepackage{pgfplots}
+\usepgfplotslibrary{units} % to add units easily to axis
+\usepgfplotslibrary{fillbetween} % to fill inbetween curves
+\usepgfplotslibrary{colormaps} % to create colormaps
+
+\title{Exam 2 Practice Problems}
+\date{March 29, 2023}
+\author{Michael Brodskiy\\ \small Professor: Q. Yan}
+
+\begin{document}
+
+\maketitle
+
+\newpage
+
+\begin{enumerate}
+
+    \section{Conceptual Questions}
+
+  \item Infinite Wells and de Broglie Waves
+
+    Because the wavelength may be defined as $\lambda=\dfrac{2L}{n}$, the situation is similar to the oscillation of a standing wave, like a string, fixed at two ends. As such, a particle moving in a similar manner would have standing de Broglie waves as solutions to the Schr\"odinger equation.
+
+  \item Wave Normalization
+
+    Purely mathematically, an un-normalized wave may be a solution to the Schr\"odinger equation; however, when applying this concept to physical quantities, it is necessary for it to be normalized. This is because the integral over the entire probability function must be equal to 1 or 100\%, and, thus, the function needs to be normalized to meet this requirement.
+
+  \item The Physical Meaning of $\displaystyle \int_{-\infty}^{\infty} |\psi(x)|^2\,dx=1$
+
+    $\psi(x)$ represents the wave function, which describes the probability of a particle being in a given position. Taking the magnitude of the wave function and squaring it, or $|\psi(x)|^2$ generates a probability density distribution. By integrating over the whole function, a probability of 1, or 100\% would be calculated, as it is definite that the particle is somewhere within the entirety of the wave.
+
+  \item Harmonic Oscillators
+
+    The ground state energy occurs when $n=0$; given the formula $E_n=\left(n+\frac{1}{2}\right)\hbar\omega_0$, this means the ground state energy is $E_0=\frac{1}{2}\hbar\omega_0$. The difference between an energy level and the ground state energy may be expressed as $E_n-E_0=n\hbar\omega_0$. This means that the smallest energy difference would be when $n=1$, and the second smallest would occur when $n=2$, yielding a value of $E_2-E_0=2\hbar\omega_0$
+
+\end{enumerate}
+
+    \section{Problems}
+
+\begin{enumerate}
+
+  \item Using Normalization Conditions
+
+    Setting up the normalization equation, we get:
+
+    $$\int_{-\frac{L}{2}}^0 \left(C\left(\dfrac{2x}{L}+1\right)\right)^2\,dx+\int_0^{\frac{L}{2}} \left(C\left(\dfrac{-2x}{L}+1\right)\right)^2\,dx=1$$
+
+    To simplify integration we can do the following:
+
+    $$\int_{-\frac{L}{2}}^0 \left(\dfrac{2xC}{L}+C\right)^2\,dx+\int_0^{\frac{L}{2}} \left(\dfrac{-2xC}{L}+C\right)^2\,dx$$
+  $$C^2\int_{-\frac{L}{2}}^0 \left(\dfrac{4x^2}{L^2}+\dfrac{4x}{L} + 1\right)\,dx+C^2\int_0^{\frac{L}{2}} \left(\dfrac{4x^2}{L^2}-\dfrac{4x}{L} + 1\right)\,dx$$
+  $$C^2\int_{-\frac{L}{2}}^{\frac{L}{2}} \left(\dfrac{8x^2}{L^2} + 2\right)\,dx$$
+
+  Finally, we must solve:
+
+  $$C^2\left( \dfrac{8x^3}{3L^2}+2x \right)\Big|_{-\frac{L}{2}}^{\frac{L}{2}}$$
+  $$C^2\left( \left(\dfrac{L}{3}+L\right)-\left( -\dfrac{L}{3}-L \right) \right)$$
+
+  Returning the ``$=1$'', we get:
+
+  $$C^2\left( \dfrac{L}{3} \right)=1$$
+  $$C^2=\dfrac{3}{L}$$
+
+  Finally, we get:
+
+  $$\boxed{C=\pm\sqrt{\frac{3}{L}}}$$
+
+  \item Applying Boundary Conditions to Find Constants
+
+    First and foremost, because $e^x$ diverges, we know that $\boxed{C=0}$. This leaves $A$, $B$, and $D$. We know the functions must be continuous at boundary, meaning that, at $x=0$, the functions need to equal each other:
+
+    $$A\sin(k_0(0))+B\cos(k_0(0))=De^{-k_1(0)}$$
+    $$B=D$$
+
+    Next, we know that the first order derivatives of the function must be continuous as well. The derivatives are:
+
+    $$\left\{\begin{array}{l r} Ak_0\cos(k_0x)-Bk_0\sin(k_0x), & x<0\\-Dk_1e^{-k_1x}, & x>0 \end{array}$$
+
+    Similarly to the first step, we must plug in $x=0$, or the boundary where this changes at. This generates:
+
+    $$Ak_0=-Dk_1$$
+
+    Rearranging in terms of $A$, we get:
+
+    $$\boxed{B=D=-\dfrac{k_0A}{k_1}}$$
+
+\end{enumerate}
+
+\end{document}
+
