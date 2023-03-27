@@ -1,0 +1,72 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: Modern Physics
+% Professor: Q. Yan
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\include{Includes.tex}
+
+\usepackage[dvipsnames,table]{xcolor}
+\usepackage{siunitx} % SI-units
+\usepackage{pgfplots}
+\usepgfplotslibrary{units} % to add units easily to axis
+\usepgfplotslibrary{fillbetween} % to fill inbetween curves
+\usepgfplotslibrary{colormaps} % to create colormaps
+
+\title{Homework 6}
+\date{March 29, 2023}
+\author{Michael Brodskiy\\ \small Professor: Q. Yan}
+
+\begin{document}
+
+\maketitle
+
+\newpage
+
+\begin{enumerate}
+
+    \section*{Permitted Wave Functions}
+
+    \begin{enumerate}
+
+      \item One reason why this function is not permitted is because it violates the normalization condition, $\displaystyle \int_{-\infty}^{\infty}|\psi(x)|^2\,dx=1$; more specifically, solving for the boundary conditions makes it violate this:
+
+        $$A\cos(kx)=B\sin(kx)$$
+        $$A\cos(0)=B\sin(0)$$
+        $$A=0$$
+
+        Differentiating to find $B$:
+
+        $$0=Bk\cos(kx)$$
+        $$B=0$$
+
+        Because both constants are zero, the integral over the entire boundary does not equal 1.
+
+      \item $\psi(x)=\dfrac{Ae^{-kx}}{x}$ can not be a solution because it is discontinuous; at the point $x=0$, the function has a discontinuity.
+
+      \item $A\sin^{-1}(kx)$ can not be a solution because it is discontinuous. $\sin^{-1}$ is only valid for values in the range $\left(-\dfrac{\pi}{2}, \dfrac{\pi}{2}\right)$, and, thus, it must have a discontinuity somewhere in its domain, unless $k$ where to have the value of zero; in such a case, the function would violate the normalization condition, as it would be zero over its whole domain.
+
+      \item $A\tan(kx)$ can not be a solution because it is discontinuous every $n\pi$ values.
+
+    \end{enumerate}
+
+    \section*{The Schr\"odinger Equation}
+
+    \section*{Expectation Values}
+
+    \section*{A Particle in a 3D Box}
+
+    \section*{Quantum Simple Harmonic Oscillator}
+
+    \begin{enumerate}
+
+      \item 
+
+      \item 
+
+    \end{enumerate}
+
+\end{enumerate}
+
+\end{document}
+
