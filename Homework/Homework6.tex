@@ -6,13 +6,6 @@
 
 \include{Includes.tex}
 
-\usepackage[dvipsnames,table]{xcolor}
-\usepackage{siunitx} % SI-units
-\usepackage{pgfplots}
-\usepgfplotslibrary{units} % to add units easily to axis
-\usepgfplotslibrary{fillbetween} % to fill inbetween curves
-\usepgfplotslibrary{colormaps} % to create colormaps
-
 \title{Homework 6}
 \date{March 29, 2023}
 \author{Michael Brodskiy\\ \small Professor: Q. Yan}
@@ -44,17 +37,54 @@
 
       \item $\psi(x)=\dfrac{Ae^{-kx}}{x}$ can not be a solution because it is discontinuous; at the point $x=0$, the function has a discontinuity.
 
-      \item $A\sin^{-1}(kx)$ can not be a solution because it is discontinuous. $\sin^{-1}$ is only valid for values in the range $\left(-\dfrac{\pi}{2}, \dfrac{\pi}{2}\right)$, and, thus, it must have a discontinuity somewhere in its domain, unless $k$ where to have the value of zero; in such a case, the function would violate the normalization condition, as it would be zero over its whole domain.
+      \item $A\sin^{-1}(kx)$ can not be a solution because it is discontinuous. $\sin^{-1}$ is only valid for values in the range $\left(-\dfrac{\pi}{2}, \dfrac{\pi}{2}\right)$, and, thus, it must have a discontinuity somewhere in its domain, unless $k$ were to have the value of zero; in such a case, the function would violate the normalization condition, as it would be zero over its whole domain.
 
-      \item $A\tan(kx)$ can not be a solution because it is discontinuous every $n\pi$ values.
+      \item $A\tan(kx)$ can not be a solution because it is discontinuous every $n\pi$ intervals.
 
     \end{enumerate}
 
     \section*{The Schr\"odinger Equation}
 
+    For a particle with $\psi(x)=Cxe^{-bx}$, plugging into the Schr\"odinger equation would yield:
+
+    $$\left( -\dfrac{\hbar^2}{2m} \right)(b^2Cxe^{-bx}-2bCe^{-bx})+U(x)(Cxe^{-bx})=E(Cxe^{-bx})$$
+    $$E=\left( -\dfrac{\hbar^2}{2m} \right)\left(b^2-\frac{2b}{x}\right)+U(x)$$
+
+    The $x$ terms balance and cancel out because $E$ is constant:
+
+    $$E=-\dfrac{\hbar^2b^2}{2m}$$
+
+    This makes $U(x)$ equal to the final term left when $E$ cancels out:
+
+    $$U(x)=-\dfrac{b\hbar^2}{mx}$$
+
     \section*{Expectation Values}
 
+    \begin{enumerate}
+
+      \item In ground state ($n=1$)
+
+        $$\psi(x)=\sqrt{\dfrac{2}{L}}sin\left( \dfrac{n\pi x}{L} \right)$$
+        $$\int_0^L \dfrac{2}{L}\sin^2\left( \dfrac{\pi x}{L} \right) x\,dx=\frac{L}{2}$$
+
+      \item In first excited state ($n=2$)
+
+        $$\int_0^L \dfrac{2}{L}\sin^2\left( \dfrac{2\pi x}{L} \right) x\,dx=\frac{L}{2}$$
+
+        It appears that the expected position value of any such particle in a unidimensional well would be $\frac{L}{2}$
+
+    \end{enumerate}
+
+    \newpage
+
     \section*{A Particle in a 3D Box}
+
+    \begin{figure}[h!]
+      \centering
+      \include{Figures/EnergyLevels}
+      \caption{Energy Levels of $E_n(n_x,n_y,n_z)=E_o(n_x^2+n_y^2+n_z^2)$}
+      \label{fig:1}
+    \end{figure}
 
     \section*{Quantum Simple Harmonic Oscillator}
 
