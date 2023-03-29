@@ -38,7 +38,7 @@
 
     \end{itemize}
 
-    \section{Scattering Experiments and the Thomson Model}
+    \section{Scattering Experiments and Thomson Model}
 
   \item An early atom model: J.J. Thomson (1904):
 
@@ -211,6 +211,64 @@
       \item For a nucleus of charge $ze$, the Coulomb force is:
 
         $$F=\frac{1}{4\pi\varepsilon_o}\frac{|q_1||q_2|}{r^2}=\frac{ze^2}{4\pi\varepsilon_o r^2}$$
+
+    \end{itemize}
+
+  \item Analyzing a Hydrogen Atom in Quantum Mechanics
+
+    \begin{itemize}
+
+      \item The potential energy, derived from the Coulomb force, is:
+
+        $$U(r)=-\dfrac{e^2}{4\pi\varepsilon_o r}$$
+
+      \item This may be converted to be in terms of $x$, and plugged into the Schr\"odinger equation:
+
+        $$-\dfrac{\hbar^2}{2m}\dfrac{d^2\psi(x)}{dx^2}-\dfrac{e^2}{4\pi\varepsilon_o x}\psi(x)=E\psi(x)$$
+
+      \item To keep this finite, the following two conditions need to be met:
+
+        $$\left\{\begin{array}{l r} x\to0, & \psi(x)=0\\ x\to\infty, & \psi(x)=0\end{array}$$
+
+        \item Using $\psi(x)=Axe^{-bx}$ with the Schr\"odinger equation, solving would obtain:
+
+          $$\boxed{b=\dfrac{me^2}{4\pi\varepsilon_o \hbar^2}=\dfrac{1}{\alpha_o}\Rightarrow\text{Bohr Radius}}$$
+
+        \item Using the normalization condition, and $\psi(x)=Axe^{-bx}=Axe^{\dfrac{x}{\alpha_o}}$, we get:
+
+          $$A=\dfrac{2}{\alpha_o^\frac{3}{2}}$$
+
+        \item Conclusions:
+
+          \begin{itemize}
+
+            \item For the ground state, there is an uncertainty in the location of $e^-$
+
+            \item The most probable region to find $e^-$ is near $x=\alpha_o$ (consistent with Bohr model)
+
+            \item But, it's possible to find $e^-$ anywhere (which is very difference from Bohr)
+
+          \end{itemize}
+
+    \end{itemize}
+
+  \item Using Classical Mechanics
+
+    \begin{itemize}
+
+      \item The angular momentum in a planetary system is constant, and vector $\vec{L}(L_x,L_y,L_z)$ has three components
+
+        \begin{itemize}
+
+          \item $l$ is the angular momentum quantum number; it determines the length of the vector
+
+          \item $m_l$ is the magnetic number; it determines one of the components of the vector
+
+          \item We have:
+
+            $$|\vec{L}|=\sqrt{l(l+1)}\hbar,\quad\quad l=0,1,2\cdots$$
+
+        \end{itemize}
 
     \end{itemize}
 
