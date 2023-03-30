@@ -1,0 +1,141 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: Modern Physics
+% Professor: Q. Yan
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\include{Includes.tex}
+
+\title{The Hydrogen Atom in Wave Mechanics}
+\date{\today}
+\author{Michael Brodskiy\\ \small Professor: Q. Yan}
+
+\begin{document}
+
+\maketitle
+
+\newpage
+
+\tableofcontents
+
+\newpage
+
+\begin{itemize}
+
+    \section{A One-Dimensional Atom}
+
+  \item Analyzing a Hydrogen Atom in Quantum Mechanics
+
+    \begin{itemize}
+
+      \item The potential energy, derived from the Coulomb force, is:
+
+        $$U(r)=-\dfrac{e^2}{4\pi\varepsilon_o r}$$
+
+      \item This may be converted to be in terms of $x$, and plugged into the Schr\"odinger equation:
+
+        $$-\dfrac{\hbar^2}{2m}\dfrac{d^2\psi(x)}{dx^2}-\dfrac{e^2}{4\pi\varepsilon_o x}\psi(x)=E\psi(x)$$
+
+      \item To keep this finite, the following two conditions need to be met:
+
+        $$\left\{\begin{array}{l r} x\to0, & \psi(x)=0\\ x\to\infty, & \psi(x)=0\end{array}$$
+
+        \item Using $\psi(x)=Axe^{-bx}$ with the Schr\"odinger equation, solving would obtain:
+
+          $$\boxed{b=\dfrac{me^2}{4\pi\varepsilon_o \hbar^2}=\dfrac{1}{\alpha_o}\Rightarrow\text{Bohr Radius}}$$
+
+        \item Using the normalization condition, and $\psi(x)=Axe^{-bx}=Axe^{\dfrac{x}{\alpha_o}}$, we get:
+
+          $$A=\dfrac{2}{\alpha_o^\frac{3}{2}}$$
+
+        \item Conclusions:
+
+          \begin{itemize}
+
+            \item For the ground state, there is an uncertainty in the location of $e^-$
+
+            \item The most probable region to find $e^-$ is near $x=\alpha_o$ (consistent with Bohr model)
+
+            \item But, it's possible to find $e^-$ anywhere (which is very difference from Bohr)
+
+          \end{itemize}
+
+    \end{itemize}
+
+    \section{Angular Momentum in the Hydrogen Atom}
+
+    \begin{itemize}
+
+      \item The angular momentum in a planetary system is constant, and vector $\vec{L}(L_x,L_y,L_z)$ has three components
+
+        \begin{itemize}
+
+          \item $l$ is the angular momentum quantum number; it determines the length of the vector
+
+          \item $m_l$ is the magnetic number; it determines one of the components of the vector
+
+          \item We have:
+
+            $$|\vec{L}|=\sqrt{l(l+1)}\hbar,\quad\quad l=0,1,2\cdots$$
+            $$\vec{L}_z=m_l\hbar,\quad\quad m_l=0,\pm1,\pm2,\cdots\pm l$$
+
+          \item We know $l$ and $m_l$ for $\vec{L}_z$, but what is the direction?
+
+          \item Applying the uncertainty principle, we obtain:
+
+            $$\Delta\vec{L}_z\Delta\phi\geq \hbar$$
+
+        \end{itemize}
+
+    \end{itemize}
+
+    \section{The Hydrogen Atom Wave Functions}
+
+  \item Moving from a unidimensional case to a tridimensional case, we try to apply the Schr\"odinger equation (in Cartesian coordinates):
+
+    $$-\dfrac{\hbar^2}{2m}\left( \dfrac{\partial^2\psi}{\partial x^2} + \dfrac{\partial^2\psi}{\partial y^2} + \dfrac{\partial^2\psi}{\partial z^2} \right)+U(x,y,z)\psi(x,y,z)=E\psi(x,y,z)$$
+
+  \item The potential energy is:
+
+    $$U(x,y,z)=-\dfrac{e^2}{4\pi\varepsilon_o}\dfrac{1}{\sqrt{x^2+y^2+z^2}}$$
+
+  \item The wave function may be defined as:
+
+    $$\psi(x,y,z)=X(x)Y(y)Z(z)$$
+
+  \item Converting to polar coordinates to make calculations simpler, the Schr\"odinger equation becomes:
+
+    $$-\dfrac{\hbar^2}{2m}\left( \dfrac{\partial^2\psi}{\partial r^2} + \dfrac{2}{r}\dfrac{\partial\psi}{\partial r}+\dfrac{1}{r^2\sin(\theta)}\dfrac{\partial}{\partial\theta}\left(\sin(\theta)\dfrac{\partial\psi}{\partial\theta}\right)+\dfrac{1}{r^2\sin^2(\theta)}\dfrac{\partial^2\psi}{\partial\phi^2}\right)+$$$$\quad\quad\quad\quad\quad\quad\quad\quad U(r)\psi(r,\theta,\phi)=E\psi(r,\theta\phi)$$
+
+  \item The wave function then becomes
+
+    $$\psi(r,\theta,\phi)=R(r)\Theta(\theta)\Phi(\phi)$$
+
+    \begin{itemize}
+
+      \item Where $R$ is the radial function, $\Theta$ is the polar function, and $\Phi$ is the azimuthal function
+
+      \item This breaks $\psi$ into 3 equations, making the wave function easier to solve for
+
+    \end{itemize}
+
+  \item The defined quantum numbers are as follows:
+
+    \begin{center}
+      \begin{tabular}[h!]{| l | c | r |}
+        \hline
+        Number & Name & Values\\
+        \hline
+        $n$ & Principle & $1,2,3,\cdots$\\
+        \hline
+        $l$ & Angular Momentum & $0,1,2,\cdots,n-1$\\
+        \hline
+        $m_l$ & Magnetic & $0,\pm1,\pm2,\cdots,\pm l$\\
+        \hline
+      \end{tabular}
+    \end{center}
+
+\end{itemize}
+
+\end{document}
+
