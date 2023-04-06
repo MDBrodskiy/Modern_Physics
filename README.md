@@ -27,6 +27,7 @@
     * [**The Rutherford-Bohr Model of the Atom**](https://github.com/MDBrodskiy/Modern_Physics/tree/master/Notes/Section5.pdf)
     * [**The Hydrogen Atom in Wave Mechanics**](https://github.com/MDBrodskiy/Modern_Physics/tree/master/Notes/Section6.pdf)
     * [**Many-Electron Atoms**](https://github.com/MDBrodskiy/Modern_Physics/tree/master/Notes/Section7.pdf)
+    * [**Molecular Structure**](https://github.com/MDBrodskiy/Modern_Physics/tree/master/Notes/Section8.pdf)
 * [**Homework**](https://github.com/MDBrodskiy/Modern_Physics/tree/master/Homework/)
     * [**Homework One**](https://github.com/MDBrodskiy/Modern_Physics/tree/master/Homework/Homework1.pdf)
     * [**Homework Two**](https://github.com/MDBrodskiy/Modern_Physics/tree/master/Homework/Homework2.pdf)
