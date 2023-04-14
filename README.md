@@ -37,6 +37,7 @@
     * [**Homework Five**](https://github.com/MDBrodskiy/Modern_Physics/tree/master/Homework/Homework5.pdf)
     * [**Homework Six**](https://github.com/MDBrodskiy/Modern_Physics/tree/master/Homework/Homework6.pdf)
     * [**Homework Seven**](https://github.com/MDBrodskiy/Modern_Physics/tree/master/Homework/Homework7.pdf)
+    * [**Homework Eight**](https://github.com/MDBrodskiy/Modern_Physics/tree/master/Homework/Homework8.pdf)
 * [**Exams**](https://github.com/MDBrodskiy/Modern_Physics/tree/master/Exams/)
     * [**Exam 2 Practice Problems**](https://github.com/MDBrodskiy/Modern_Physics/tree/master/Exams/Exam2Practice.pdf)
 
