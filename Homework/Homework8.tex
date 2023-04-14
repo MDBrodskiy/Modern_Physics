@@ -1,0 +1,173 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Written By Michael Brodskiy
+% Class: Modern Physics
+% Professor: Q. Yan
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\include{Includes.tex}
+
+\title{Homework 8}
+\date{April 18, 2023}
+\author{Michael Brodskiy\\ \small Professor: Q. Yan}
+
+\begin{document}
+
+\maketitle
+
+\newpage
+
+\begin{enumerate}
+
+    \section*{A One-Dimensional Atom}
+
+  \item The probability of finding an electron in a range may be found using $P=\displaystyle\int_a^b|\psi(x)|^2\,dx$
+
+    $$P=\int_0^{a_o} |\psi(x)|^2\,dx$$
+    $$\psi(x)=\sqrt{\frac{2}{L}}\sin\left( \frac{a\pi x}{L} \right)\,dx$$
+    $$\int_0^{a_o} \frac{2}{L}\sin^2\left( \frac{a\pi x}{L} \right)\, dx$$
+    $$2\sin^2(x)=1-\cos(2x)\Rightarrow\frac{1}{L}\int_0^{a_o} 1-\cos\left( \frac{2a\pi x}{L} \right)\,dx$$
+
+    For the ground state, $a=1$, so we get:
+
+    $$\frac{1}{L}\left( x-\frac{L}{2\pi}\sin\left( \frac{2\pi x}{L} \right) \right)\Big|_0^{a_o}$$
+    $$\frac{1}{L}\left( a_o-\frac{L}{2\pi}\sin\left(\frac{2\pi a_o}{L}\right) \right)$$
+
+    We know $L=a_o$ because the difference is $a_o-0$, so:
+
+    $$\frac{1}{a_o}\left( a_o-\frac{a_o}{2\pi}\sin(2\pi) \right)$$
+    $$P=1=100\%$$
+
+    It is guaranteed that the particle is within this range.
+
+    \section*{Hydrogen Atom Wave Functions}
+
+  \item The possible quantum numbers are:
+
+    \begin{center}
+      \begin{tabular}[h!]{|c|c|c|c|}
+        \hline
+        $n$ & $l$ & $m_l$ & $m_s$\\
+        \hline
+        $4$ & $0$ & $0$ & $\pm1/2$\\
+        \hline
+        $4$ & $1$ & $-1$ & $\pm1/2$\\
+        \hline
+        $4$ & $1$ & $0$ & $\pm1/2$\\
+        \hline
+        $4$ & $1$ & $1$ & $\pm1/2$\\
+        \hline
+        $4$ & $2$ & $-2$ & $\pm1/2$\\
+        \hline
+        $4$ & $2$ & $-1$ & $\pm1/2$\\
+        \hline
+        $4$ & $2$ & $0$ & $\pm1/2$\\
+        \hline
+        $4$ & $2$ & $1$ & $\pm1/2$\\
+        \hline
+        $4$ & $2$ & $2$ & $\pm1/2$\\
+        \hline
+        $4$ & $3$ & $-3$ & $\pm1/2$\\
+        \hline
+        $4$ & $3$ & $-2$ & $\pm1/2$\\
+        \hline
+        $4$ & $3$ & $-1$ & $\pm1/2$\\
+        \hline
+        $4$ & $3$ & $0$ & $\pm1/2$\\
+        \hline
+        $4$ & $3$ & $1$ & $\pm1/2$\\
+        \hline
+        $4$ & $3$ & $2$ & $\pm1/2$\\
+        \hline
+        $4$ & $3$ & $3$ & $\pm1/2$\\
+        \hline
+      \end{tabular}
+    \end{center}
+
+    \section*{Hydrogen Atom Wave Functions 2}
+
+  \item We know the spherical wave equation is:
+
+    $$-\frac{\hbar^2}{2m}\left[ \frac{\partial^2}{\partial r^2}+\frac{2}{r}\frac{\partial \Psi}{\partial r}+\frac{1}{r^2\sin(\theta)}\frac{\partial}{\partial\theta}\left( \sin(\theta)\frac{\partial\Psi}{\partial\theta} \right)+\frac{1}{r^2\sin^2(\theta)}\frac{\partial^2}{\partial\phi^2} \right]+U(r)\Psi(r,\theta.\phi)=E\Psi(r,\theta,\phi)$$
+
+    We also know that the ground state wave function of a hydrogen atom is:
+
+    $$\psi=\frac{1}{\sqrt{\pi}}\left( \frac{1}{a_o} \right)^{\frac{3}{2}}e^{-\frac{r}{a_o}}$$
+    $$\frac{2}{r}\frac{\partial \Psi}{\partial r}=-\frac{2}{r\sqrt{\pi}}\left( \frac{1}{a_o} \right)^{\frac{5}{2}}e^{-\frac{r}{a_o}}$$
+    $$\frac{\partial\Psi^2}{\partial r^2}=\frac{1}{\sqrt{\pi}}\left( \frac{1}{a_o} \right)^{\frac{7}{2}}e^{-\frac{r}{a_o}}$$
+
+    Plugging this into the differential equation, we get:
+
+    $$-\frac{\hbar^2}{2m}\left[ \frac{1}{\sqrt{\pi}}\left( \frac{1}{a_o} \right)^{\frac{7}{2}}e^{-\frac{r}{a_o}}-\frac{2}{r\sqrt{\pi}}\left( \frac{1}{a_o} \right)^{\frac{5}{2}}e^{-\frac{r}{a_o}} \right]+U(r)\Psi=E\Psi$$
+
+    This can be rewritten as:
+
+    $$-\frac{\hbar^2}{2m}\left[ \left( \frac{1}{a_o} \right)^2\cancel{\Psi}-\frac{2}{ra_o}\cancel{\Psi} \right]+U(r)\cancel{\Psi}=E\cancel{\Psi}$$
+
+    We know $E$ is independent of $r$, so we get:
+
+    $$E=-\frac{\hbar^2}{2m}\left( \frac{1}{a_o} \right)^2$$
+
+    Because we know that $a_o=-\frac{\hbar^2}{me^2}$, we can plug this in:
+
+    $$E=-\frac{\hbar^2}{2m}\frac{m^2e^4}{\hbar^4}=-\frac{me^4}{2\hbar^2}$$
+
+    This is the known ground state energy of an electron formula, and, thus, this is a valid solution to the spherical wave function
+
+    \section*{Radical Probability Densities}
+
+  \item The spherical wave function of the state where $n=2$ and $l=0$ is:
+
+    $$\psi=\left( 2-\frac{r}{a_o} \right)\left( \frac{1}{a_o} \right)^{\frac{3}{2}}e^{-\dfrac{r}{2a_o}}$$
+
+    The probability density is given by:
+
+  $$P_{2,0}=4\pi r^2|\psi|^2$$
+
+  Differentiating this and setting it equal to 0 will yield the highest probability value:
+
+  $$\dfrac{d}{dr}\left( 4\pi r^2|\psi|^2 \right)=0$$
+
+  This becomes:
+
+  $$\frac{d}{dr}\left( 4\pi r^2\left( 2-\frac{r}{a_o} \right)^2\left( \frac{1}{a_o} \right)^3  e^{-\frac{r}{a_o}}\right)$$
+
+  Simplifying, this turns into:
+
+  $$\frac{d}{dr}\left( \left( \frac{16\pi r^2}{a_o^3}-\frac{16\pi r^3}{a_o^4}+\frac{4\pi r^4}{a_o^5} \right)e^{-\frac{r}{a_o}} \right)$$
+
+  Differentiating, this becomes:
+
+  $$\left( \frac{32\pi r}{a_o^3}-\frac{48\pi r^2}{a_o^4}+\frac{16\pi r^3}{a_o^5} \right)e^{-\frac{r}{a_o}}-\frac{1}{a_o}\left( \frac{16\pi r^2}{a_o^3}-\frac{16\pi r^3}{a_o^4}+\frac{4\pi r^4}{a_o^5} \right)e^{-\frac{r}{a_o}}=0$$
+
+  The exponential terms cancel out, which leaves us with:
+
+  $$\left( \frac{32\pi r}{a_o^3}-\frac{64\pi r^2}{a_o^4}+\frac{32\pi r^3}{a_o^5}-\frac{4\pi r^4}{a_o^6} \right)=0$$
+
+  Simplifying further:
+
+  $$8-\frac{16r}{a_o}+\frac{8r^2}{a_o^2}-\frac{r^3}{a_o^3}=0$$
+
+  Using a numerical solver, the roots of this are found to be:
+
+  $$r=2a_o,(3\pm\sqrt{5})a_o$$
+
+    \section*{Intrinsic Spin}
+
+  \item
+
+    \begin{enumerate}
+
+      \item The degeneracy may be calculated using the formula $2n^2$; for the $n=5$ energy level, it is found that there are $2n^2=2(5)^2=50$ degeneracies
+
+      \item The possible combinations for $n=5$ are as follows:
+
+        $$n=5\right l = \left\{\begin{array}{c c} 0, & m_l =0\\1, & m_l=\left\{\begin{array}{c} 0\\ \pm1 \end{array}\\2, & m_l=\left\{\begin{array}{c} 0\\\pm1\\\pm2\end{array}\\3, & m_l=\left\{\begin{array}{c} 0\\\pm1\\\pm2\\\pm3\end{array}\\4, & m_l=\left\{\begin{array}{c} 0\\\pm1\\\pm2\\\pm3\\\pm4\end{array}\end{array}$$
+
+    \end{enumerate}
+
+    Counting the possible values, there are 25. When including spin in the calculation, this doubles the degeneracy values, as, for any quantum number, spin may be $\pm\frac{1}{2}$. As such, there are $2(25)=50$ degeneracies
+
+\end{enumerate}
+
+\end{document}
+
