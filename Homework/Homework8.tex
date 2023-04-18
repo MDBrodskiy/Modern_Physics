@@ -23,21 +23,15 @@
   \item The probability of finding an electron in a range may be found using $P=\displaystyle\int_a^b|\psi(x)|^2\,dx$
 
     $$P=\int_0^{a_o} |\psi(x)|^2\,dx$$
-    $$\psi(x)=\sqrt{\frac{2}{L}}\sin\left( \frac{a\pi x}{L} \right)\,dx$$
-    $$\int_0^{a_o} \frac{2}{L}\sin^2\left( \frac{a\pi x}{L} \right)\, dx$$
-    $$2\sin^2(x)=1-\cos(2x)\Rightarrow\frac{1}{L}\int_0^{a_o} 1-\cos\left( \frac{2a\pi x}{L} \right)\,dx$$
+    $$\psi(x)=2x\left( \frac{1}{a_o} \right)^{\frac{3}{2}}e^{-\frac{x}{a_o}}$$
+    $$\int_0^{a_o} \frac{4x^2}{a_o^3}e^{-\frac{2x}{a_o}}\, dx$$
+    $$\frac{4}{a_o^3}\int_0^{a_o} x^2e^{-\frac{2x}{a_o}}\,dx$$
 
-    For the ground state, $a=1$, so we get:
+    Using a mathematical solver, we get:
 
-    $$\frac{1}{L}\left( x-\frac{L}{2\pi}\sin\left( \frac{2\pi x}{L} \right) \right)\Big|_0^{a_o}$$
-    $$\frac{1}{L}\left( a_o-\frac{L}{2\pi}\sin\left(\frac{2\pi a_o}{L}\right) \right)$$
+    $$\frac{4}{a_o^3}\int_0^{a_o} x^2e^{-\frac{2x}{a_o}}\,dx=.323$$
 
-    We know $L=a_o$ because the difference is $a_o-0$, so:
-
-    $$\frac{1}{a_o}\left( a_o-\frac{a_o}{2\pi}\sin(2\pi) \right)$$
-    $$P=1=100\%$$
-
-    It is guaranteed that the particle is within this range.
+    There is a 32.3\% probability the electron is in this range
 
     \section*{Hydrogen Atom Wave Functions}
 
@@ -107,15 +101,15 @@
 
     $$E=-\frac{\hbar^2}{2m}\left( \frac{1}{a_o} \right)^2$$
 
-    Because we know that $a_o=-\frac{\hbar^2}{me^2}$, we can plug this in:
+    Because we know that $a_o=\frac{4\pi\varepsilon_o\hbar^2}{me^2}$, we can plug this in:
 
-    $$E=-\frac{\hbar^2}{2m}\frac{m^2e^4}{\hbar^4}=-\frac{me^4}{2\hbar^2}$$
+    $$E=-\frac{\hbar^2}{2m}\frac{m^2e^4}{\hbar^4}=-\frac{me^4}{32\pi^2\varepsilon_o^2\hbar^2}$$
 
-    This is the known ground state energy of an electron formula, and, thus, this is a valid solution to the spherical wave function
+    This means $E_o=-13.6[\si{\eV}]$; thus, this is a valid solution.
 
     \section*{Radical Probability Densities}
 
-  \item The spherical wave function of the state where $n=2$ and $l=0$ is:
+  \item The radial wave function of the state where $n=2$ and $l=0$ is:
 
     $$\psi=\left( 2-\frac{r}{a_o} \right)\left( \frac{1}{a_o} \right)^{\frac{3}{2}}e^{-\dfrac{r}{2a_o}}$$
 
@@ -150,6 +144,8 @@
   Using a numerical solver, the roots of this are found to be:
 
   $$r=2a_o,(3\pm\sqrt{5})a_o$$
+
+  Peaks occur at $r=(3\pm\sqrt{5})a_o$
 
     \section*{Intrinsic Spin}
 
